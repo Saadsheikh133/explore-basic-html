@@ -49,6 +49,19 @@
     .attribute-selector{
         color: green;
     }
+    .flex{
+        display: flex;
+        width: 100%;
+        gap: 4px;
+        border: 3px solid khaki;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+        text-align: center;
+        font-size: 50px;
+    }
 </style>
 <div class="child">
     <div>
@@ -64,3 +77,20 @@
 <!-- Attribute selectors (select elements based on an attribute or attribute value) -->
 <h2 class="attribute-selector">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia.</h2>
 <h4 class="attribute-selector">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, quia!</h4>
+<!--explore flex  -->
+<div class="flex">
+    <div style="height: 100px; width: 100%; background:orange;"></div>
+    <div style="height: 100px; width: 100%; background:orange;"></div>
+    <div style="height: 100px; width: 100%; background:orange;"></div>
+    <div style="height: 100px; width: 100%; background:orange;"></div>
+</div>
+
+<!-- explore grid property -->
+<div class="grid">
+    <div style="height: 100px; background:skyblue;">1</div>
+    <div style="height: 100px; background:skyblue;">2</div>
+    <div style="height: 100px; background:skyblue;">3</div>
+    <div style="height: 100px; background:skyblue;">4</div>
+    <div style="height: 100px; background:skyblue;">5</div>
+    <div style="height: 100px; background:skyblue;">6</div>
+</div>
