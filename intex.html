@@ -23,3 +23,44 @@
     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, beatae?</h6>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, vitae.</p>
 </div>
+
+<!-- Type of CSS Selectors -->
+<!-- CSS selectors are used to "find" (or select) the HTML elements you want to style. -->
+<!-- We can divide CSS selectors into five categories: -->
+
+<!-- 1. Simple selectors (select elements based on name, id, class) -->
+<h1 class="heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, debitis.</h1>
+<h1 id="heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, debitis.</h1>
+<input type="text" name="name">
+
+<!-- 2. Combinator selectors (select elements based on a specific relationship between them) -->
+
+<style>
+    .child>div {
+        height: 100px;
+        border: 2px solid red;
+    }
+    .class-selector{
+        color: red;
+    }
+    .element-selector{
+        color: orange;
+    }
+    .attribute-selector{
+        color: green;
+    }
+</style>
+<div class="child">
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, error.</h1>
+    </div>
+</div>
+
+<!-- Pseudo-class selectors (select elements based on a certain state) -->
+<h4 class="class-selector">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, praesentium?</h4>
+
+<!-- Pseudo-elements selectors (select and style a part of an element) -->
+<h3>Lorem ipsum, dolor sit amet consectetur <span class="element-selector">adipisicing</span> elit. Doloribus, facilis.</h3>
+<!-- Attribute selectors (select elements based on an attribute or attribute value) -->
+<h2 class="attribute-selector">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia.</h2>
+<h4 class="attribute-selector">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, quia!</h4>
